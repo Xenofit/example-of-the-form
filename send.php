@@ -23,6 +23,6 @@ mail($to, $theme, $message, $headers); //отправляет получател
 </html>
 
 <script language="JavaScript" type="text/javascript">
-function changeurl(){eval(self.location="http://form1.local/form.html");}
+function changeurl(){eval(self.location="http://form1.local/index.html");}
 window.setTimeout("changeurl();",2000);
 </script>
