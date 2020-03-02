@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale = 1">
+	<title>The Form</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style_of_form.css">
+</head>
+<body>
+
+	<form class="form-of-authorization" action="send.php" method="post">
+		<label for="name">Your name:</label>
+		<input type="text" class="your-name" name="user-name" id="name" required>
+		<label for="mail">Your e-mail:</label>
+		<input type="email" class="your-email" name="user-mail" id="mail" required>
+		<label for="phone">Your phone: (example 89112223344)</label>
+		<input type="tel" class="your-phone" name="user-phone" id="phone" pattern="[0-9]{11,11}">
+		<label for="message">Your message:</label>
+		<textarea class="your-message" name="user-message" id="message"></textarea>
+		<input class="to-send" type="submit" value="Send">
+		<input class="to-reset" type="reset" value="Reset">
+	</form>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+
+</body>
+</html>
